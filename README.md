@@ -64,29 +64,29 @@ curl -O https://raw.githubusercontent.com/Falconmx1/MX-NET-SCANNER/main/mx_net_s
 
 🚀 Uso Rápido
 # Escaneo básico (puertos 1-1000)
-python mx_net_scanner.py --target 192.168.1.1
+python3 mx_net_scanner.py --target 192.168.1.1
 
 # Escaneo con rango personalizado
-python mx_net_scanner.py --target google.com --start 1 --end 5000
+python3 mx_net_scanner.py --target google.com --start 1 --end 5000
 
 # En Linux (requiere sudo para puertos privilegiados)
 sudo python mx_net_scanner.py --target localhost
 
 # En Windows (como administrador)
-python mx_net_scanner.py --target 192.168.1.1
+python3 mx_net_scanner.py --target 192.168.1.1
 
 📝 Ejemplos Prácticos
 1. Escaneo rápido de red local
 python mx_net_scanner.py --target 192.168.1.1 --end 500 --threads 200
 
 2. Escaneo completo de puertos comunes
-python mx_net_scanner.py --target scanme.nmap.org --start 1 --end 1000
+python3 mx_net_scanner.py --target scanme.nmap.org --start 1 --end 1000
 
 3. Escaneo con servidor web en puerto diferente
-python mx_net_scanner.py --target 10.0.0.1 --web-port 9000
+python3 mx_net_scanner.py --target 10.0.0.1 --web-port 9000
 
 4. Escaneo lento pero preciso (timeout alto)
-python mx_net_scanner.py --target 192.168.1.100 --timeout 3 --threads 50
+python3 mx_net_scanner.py --target 192.168.1.100 --timeout 3 --threads 50
 
 🌐 Interfaz Web
 Una vez iniciado el escaneo, la herramienta:
@@ -111,11 +111,11 @@ Error: No se pudo resolver el dominio
 # Verifica la conexión DNS
 ping google.com
 # O usa IP directamente
-python mx_net_scanner.py --target 8.8.8.8
+python3 mx_net_scanner.py --target 8.8.8.8
 
 Error: Puerto 8080 ya está en uso
 # Usa un puerto diferente
-python mx_net_scanner.py --target 192.168.1.1 --web-port 8888
+python3 mx_net_scanner.py --target 192.168.1.1 --web-port 8888
 
 En Windows: python no se reconoce como comando
 # Usa python3 o la ruta completa
