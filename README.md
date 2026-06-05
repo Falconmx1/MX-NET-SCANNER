@@ -77,7 +77,7 @@ python3 mx_net_scanner.py --target 192.168.1.1
 
 📝 Ejemplos Prácticos
 1. Escaneo rápido de red local
-python mx_net_scanner.py --target 192.168.1.1 --end 500 --threads 200
+python3 mx_net_scanner.py --target 192.168.1.1 --end 500 --threads 200
 
 2. Escaneo completo de puertos comunes
 python3 mx_net_scanner.py --target scanme.nmap.org --start 1 --end 1000
@@ -121,4 +121,4 @@ En Windows: python no se reconoce como comando
 # Usa python3 o la ruta completa
 python3 mx_net_scanner.py --target 192.168.1.1
 # O usa py
-py mx_net_scanner.py --target 192.168.1.1
+python3 mx_net_scanner.py --target 192.168.1.1
